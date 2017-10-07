@@ -180,6 +180,14 @@ ul {
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
+.go-away-up {
+  transition: all 3s ease-in;
+  transform: translate3d(0px, -999px, 0);
+}
+.go-away-down {
+  transition: all 3s ease-in;
+  transform: translate3d(0px, 999px, 0);
+}
 .members__section {
   padding: 16px;
 }
