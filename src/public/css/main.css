@@ -137,6 +137,7 @@ ul {
 }
 .schedule__td:first-child {
   border-right: 1px solid #fff;
+  text-align: right;
 }
 .schedule__h2 {
   font-size: 18px;
