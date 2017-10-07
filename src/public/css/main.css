@@ -174,8 +174,14 @@ ul {
 .members {
   margin: 76px auto;
 }
+.fidde {
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
 .members__section {
-  padding-bottom: 16px;
+  padding: 16px;
 }
 .members__name {
   padding-left: 16px;
