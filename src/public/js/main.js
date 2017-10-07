@@ -15,14 +15,10 @@
 
   // jk
   const ups = document.querySelectorAll(jsSelector("up"));
-  const downs = document.querySelectorAll(jsSelector("down"));
 
   setTimeout(() => {
     ups.forEach((e, i) => {
       setTimeout(() => e.classList.add("go-away-up"), i * 100);
-    });
-    downs.forEach((e, i) => {
-      setTimeout(() => e.classList.add("go-away-down"), i * 100);
     });
   }, 500);
 })();
