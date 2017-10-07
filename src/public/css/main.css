@@ -6,14 +6,14 @@
  :root {
   background: #323030;
   color: #fff;
-  letter-spacing: 0.6px;
+  line-height: 21px;
+  letter-spacing: 1px;
   font-family: 'Roboto', sans-serif;
 }
 #root {
   margin: 0 auto;
 }
 h1, h2 {
-  letter-spacing: 1px;
   font-size: 20px;
 }
 a {
@@ -83,7 +83,6 @@ ul {
 }
 .section__text {
   text-align: center;
-  line-height: 21px;
 }
 .section__image-text-container {
   padding: 32px 16px;
