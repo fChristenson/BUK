@@ -12,13 +12,4 @@
       menuButton.checked = false;
     });
   });
-
-  // jk
-  const ups = document.querySelectorAll(jsSelector("up"));
-
-  setTimeout(() => {
-    ups.forEach((e, i) => {
-      setTimeout(() => e.classList.add("go-away-up"), i * 100);
-    });
-  }, 500);
 })();
