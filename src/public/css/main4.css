@@ -48,6 +48,7 @@ ul {
   width: 100vw;
   height: 100vh;
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   transition: all 200ms ease-in-out;
@@ -101,7 +102,7 @@ ul {
   position: absolute;
   top: 8px;
   left: 8px;
-  z-index: 1;
+  z-index: 2;
 }
 .menu__ul {
   padding: 58px 0 0 16px;
