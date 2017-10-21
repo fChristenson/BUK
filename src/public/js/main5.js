@@ -13,6 +13,14 @@
     });
   });
 
+  Array.from(document.querySelectorAll("img[data-src]")).forEach(img => {
+    img.setAttribute("src", img.getAttribute("data-src"));
+    img.onload = function() {
+      img.classList.add("is-visible");
+      img.classList.remove("header-image");
+    };
+  });
+
   const chartConfig = {
     bindto: "#chart",
     data: {

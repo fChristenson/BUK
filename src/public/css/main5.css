@@ -81,6 +81,21 @@ ul {
 }
 .section__image {
   width: 100%;
+  object-fit: cover;
+  max-height: 240px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.section__image.is-visible, .section__image.header-image {
+  opacity: 1;
+}
+.header-image {
+  filter: blur(20px);
+}
+@media screen and (min-width: 321px) {
+  .section__image {
+    max-height: 800px;
+  }
 }
 .section__title {
   text-align: center;
@@ -210,8 +225,20 @@ ul {
   padding-left: 16px;
 }
 .burgers__img {
+  max-height: 240px;
+  object-fit: cover;
   padding: 16px 0;
   width: 100%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.burgers__img.is-visible, .burgers__img.header-image {
+  opacity: 1;
+}
+@media screen and (min-width: 321px) {
+  .burgers__img {
+    max-height: 800px;
+  }
 }
 .burgers__rating {
   padding: 0 0 16px;
