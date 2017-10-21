@@ -5,8 +5,6 @@
     jsSelector("menu-click-catcher")
   );
 
-  if (!menubar || !menuClickCatchers) return;
-
   menuClickCatchers.forEach(e => {
     e.addEventListener("click", event => {
       menuButton.checked = false;
