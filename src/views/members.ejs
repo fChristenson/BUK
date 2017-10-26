@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<% include ./partials/header %>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <title>BUK</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+  <link href="/c3.min.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link href="/main.dcd867b6729c512b12110fb82872446f.css" rel="stylesheet"></head>
 
   <body>
     <label id="menu-button" for="menu-toggle"></label>
     <h1 class="title">Medlemmar</h1>
     <div id="root">
-      <% include ./partials/menu %>
+      <input id="menu-toggle" data-js="menu-toggle" type="checkbox">
+<aside class="menu" data-js="menu">
+  <div class="menu__list">
+    <ul class="menu__ul">
+      <li class="menu__li">
+        <a href="/meetups" class="menu__link">
+          <img class="menu__img" src="/logo.svg" alt="logo">
+          <div class="menu__link-text-container">
+            <h2 class="menu__h2">Träffar</h2>
+            <div class="menu__text">Tid &amp; Plats</div>
+          </div>
+        </a>
+      </li>
+      <li class="menu__li">
+        <a href="/burgers" class="menu__link">
+          <img class="menu__img" src="/logo.svg" alt="logo">
+          <div class="menu__link-text-container">
+            <h2 class="menu__h2">Burgare</h2>
+            <div class="menu__text">Recensioner &amp; Bilder</div>
+          </div>
+        </a>
+      </li>
+      <li class="menu__li">
+        <a href="/members" class="menu__link">
+          <img class="menu__img" src="/logo.svg" alt="logo">
+          <div class="menu__link-text-container">
+            <h2 class="menu__h2">Medlemmar</h2>
+            <div class="menu__text">Våra goa gubbar</div>
+          </div>
+        </a>
+      </li>
+      <li class="menu__li">
+        <a href="/rules" class="menu__link">
+          <img class="menu__img" src="/logo.svg" alt="logo">
+          <div class="menu__link-text-container">
+            <h2 class="menu__h2">Regler</h2>
+            <div class="menu__text">Ja, vi har sånt också</div>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="menu__list__click-catcher" data-js="menu-click-catcher"></div>
+  </div>
+  <div class="menu__click-catcher" data-js="menu-click-catcher"></div>
+</aside>
         <div class="members">
           <div class="members__section">
             <h2 class="members__name">Daniel</h2>
@@ -39,7 +106,6 @@
           </div>
         </div>
     </div>
-    <% include ./partials/footer %>
-  </body>
+  <script type="text/javascript" src="/vendor.aa23e65dc923131a344b.bundle.js"></script><script type="text/javascript" src="/main.d74d0f9237290aef49b2.bundle.js"></script><script type="text/javascript" src="/burgers.aa9b8668dd628e33e1ec.bundle.js"></script></body>
 
 </html>

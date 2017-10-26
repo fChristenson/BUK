@@ -4,7 +4,7 @@ const path = require("path");
 const compression = require("compression");
 
 app.use(compression({ level: 9 }));
-app.use(express.static(path.join(__dirname, "public"), { maxAge: "1y" }));
+app.use(express.static(path.join(__dirname, "public/dist"), { maxAge: "1y" }));
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
