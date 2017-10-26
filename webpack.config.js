@@ -1,6 +1,7 @@
 const webpack = require("webpack");
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { BukHtmlWebpackPlugin } = require("./build/html");
@@ -8,7 +9,8 @@ const { BukHtmlWebpackPlugin } = require("./build/html");
 module.exports = {
   entry: {
     main: path.join(__dirname, "src/public/js/main.js"),
-    burgers: path.join(__dirname, "src/public/js/burgers.js")
+    burgers: path.join(__dirname, "src/public/js/burgers.js"),
+    vendor: ["c3"]
   },
   output: {
     path: path.join(__dirname, "src/public/dist/"),
@@ -28,6 +30,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin([path.join(__dirname, "/src/public/dist/")]),
     new CopyWebpackPlugin([
       {
         from: path.join(__dirname, "node_modules/c3/c3.min.css"),
@@ -39,10 +42,6 @@ module.exports = {
       }
     ]),
     new ExtractTextPlugin("[name].[contenthash].css"),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: "vendor",
-      minChunks: ({ resource }) => /node_modules/.test(resource)
-    }),
     BukHtmlWebpackPlugin("index"),
     BukHtmlWebpackPlugin("burgers"),
     BukHtmlWebpackPlugin("rules"),
