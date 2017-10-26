@@ -1,5 +1,7 @@
 const jsSelector = require("../selectors").jsSelector;
 
+const menuButton = document.querySelector(jsSelector("menu-toggle"));
+
 const menuClickCatchers = document.querySelectorAll(
   jsSelector("menu-click-catcher")
 );
