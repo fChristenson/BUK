@@ -4,6 +4,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const multi = require("multi-loader");
 const { BukHtmlWebpackPlugin } = require("./build/html");
 
 module.exports = {
@@ -22,10 +23,11 @@ module.exports = {
       {
         test: /\.css$/,
         include: [path.resolve(__dirname, "src/public/css")],
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
-        })
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(jpe?g|png)$/i,
+        loader: "file-loader?name=[name].webp!webp-loader?{quality: 95}"
       }
     ]
   },
