@@ -7,6 +7,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const multi = require("multi-loader");
 const { BukHtmlWebpackPlugin } = require("./build/html");
 
+const isProd = process.env.NODE_ENV === "production";
+
 module.exports = {
   entry: {
     main: path.join(__dirname, "src/public/js/main.js"),
@@ -14,7 +16,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, "src/public/dist/"),
-    filename: "[name].[chunkhash].bundle.js",
+    filename: isProd ? "[name].[chunkhash].bundle.js" : "[name].js",
     publicPath: "/"
   },
   module: {
