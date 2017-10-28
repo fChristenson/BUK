@@ -10,8 +10,7 @@ const { BukHtmlWebpackPlugin } = require("./build/html");
 module.exports = {
   entry: {
     main: path.join(__dirname, "src/public/js/main.js"),
-    burgers: path.join(__dirname, "src/public/js/burgers.js"),
-    vendor: ["c3"]
+    burgers: path.join(__dirname, "src/public/js/burgers.js")
   },
   output: {
     path: path.join(__dirname, "src/public/dist/"),
@@ -32,6 +31,14 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "vendor",
+      minChunks: ({ resource }) => /node_modules/.test(resource)
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "runtime",
+      minChunks: Infinity
+    }),
     new CleanWebpackPlugin([path.join(__dirname, "/src/public/dist/")]),
     new CopyWebpackPlugin([
       {
@@ -43,11 +50,12 @@ module.exports = {
         to: path.join(__dirname, "/src/public/dist/")
       }
     ]),
+    new webpack.HashedModuleIdsPlugin(),
     new ExtractTextPlugin("[name].[contenthash].css"),
-    BukHtmlWebpackPlugin("index", ["main"]),
-    BukHtmlWebpackPlugin("burgers", ["main", "burgers"]),
-    BukHtmlWebpackPlugin("rules", ["main"]),
-    BukHtmlWebpackPlugin("meetups", ["main"]),
-    BukHtmlWebpackPlugin("members", ["main"])
+    BukHtmlWebpackPlugin("index", ["main", "vendor", "runtime"]),
+    BukHtmlWebpackPlugin("burgers", ["main", "burgers", "vendor", "runtime"]),
+    BukHtmlWebpackPlugin("rules", ["main", "vendor", "runtime"]),
+    BukHtmlWebpackPlugin("meetups", ["main", "vendor", "runtime"]),
+    BukHtmlWebpackPlugin("members", ["main", "vendor", "runtime"])
   ]
 };
