@@ -44,10 +44,10 @@ module.exports = {
       }
     ]),
     new ExtractTextPlugin("[name].[contenthash].css"),
-    BukHtmlWebpackPlugin("index"),
-    BukHtmlWebpackPlugin("burgers"),
-    BukHtmlWebpackPlugin("rules"),
-    BukHtmlWebpackPlugin("meetups"),
-    BukHtmlWebpackPlugin("members")
+    BukHtmlWebpackPlugin("index", ["main"]),
+    BukHtmlWebpackPlugin("burgers", ["main", "burgers"]),
+    BukHtmlWebpackPlugin("rules", ["main"]),
+    BukHtmlWebpackPlugin("meetups", ["main"]),
+    BukHtmlWebpackPlugin("members", ["main"])
   ]
 };

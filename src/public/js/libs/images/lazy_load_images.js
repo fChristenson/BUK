@@ -8,10 +8,12 @@ function loadImages() {
     return;
   }
 
-  hasScrolled = true;
   const images = document.querySelectorAll("img[data-js=load-on-scroll]");
-
   const button = document.getElementById("menu-button");
+
+  if (!images || !button) return;
+
+  hasScrolled = true;
   button.classList.add("menu-button-background");
 
   Array.from(images).forEach(function(img) {

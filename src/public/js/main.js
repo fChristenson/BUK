@@ -1,4 +1,4 @@
-require("./libs/event_listeners");
+require("./libs/menu");
 require("./libs/css");
 require("../css/main.css");
 require("./libs/images");
