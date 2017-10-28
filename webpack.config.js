@@ -3,8 +3,6 @@ const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const multi = require("multi-loader");
 const { BukHtmlWebpackPlugin } = require("./build/html");
 
 const isProd = process.env.NODE_ENV === "production";
