@@ -20,3 +20,9 @@ function loadMenuImages() {
 }
 
 window.loadMenuImages = loadMenuImages;
+
+const menuButton = document.querySelector(jsSelector("menu-toggle"));
+
+if (menuButton && menuButton.checked) {
+  loadMenuImages();
+}

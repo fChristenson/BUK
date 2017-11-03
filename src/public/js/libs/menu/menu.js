@@ -10,7 +10,7 @@ const jsSelector = require("../selectors").jsSelector;
   if (!menuClickCatchers || !menuButton) return;
 
   menuClickCatchers.forEach(function(e) {
-    e.addEventListener("click", function(event) {
+    e.addEventListener("click", function() {
       menuButton.checked = false;
     });
   });
