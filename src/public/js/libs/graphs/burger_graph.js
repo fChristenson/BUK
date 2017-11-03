@@ -25,7 +25,7 @@ const chartConfig = {
     },
     label: {
       format: function(value) {
-        return d3.format("")(Math.floor(value / 12));
+        return Math.floor(value / 12);
       }
     }
   }
