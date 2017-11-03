@@ -19,8 +19,12 @@ const chartConfig = {
     pattern: ["#3F51B5", "#2196F3", "#00BCD4", "#009688", "#4CAF50"]
   },
   donut: {
+    title: "4/6",
+    color: {
+      pattern: ["#fff"]
+    },
     label: {
-      format: function(value, ratio, id) {
+      format: function(value) {
         return d3.format("")(Math.floor(value / 12));
       }
     }

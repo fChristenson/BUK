@@ -256,6 +256,12 @@ ul {
 .burgers__rating--4 {
   width: 192px;
 }
-.c3-legend-item {
+.burgers__rating--6 {
+ width: 290px; 
+}
+.c3-chart-arcs-title, .c3-legend-item {
   fill: #fff;
+}
+.c3-chart-arcs-title {
+  font-size: 4em;
 }
