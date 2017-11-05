@@ -2,7 +2,6 @@ const webpack = require("webpack");
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const { BukHtmlWebpackPlugin } = require("./build/html");
 
 const isProd = process.env.NODE_ENV === "production";
@@ -51,7 +50,6 @@ module.exports = {
       }
     ]),
     new webpack.HashedModuleIdsPlugin(),
-    new ExtractTextPlugin("[name].[contenthash].css"),
     BukHtmlWebpackPlugin("index", ["main", "vendor", "runtime"]),
     BukHtmlWebpackPlugin("burgers", ["main", "burgers", "vendor", "runtime"]),
     BukHtmlWebpackPlugin("rules", ["main", "vendor", "runtime"]),
