@@ -1,7 +1,10 @@
 const c3 = require("c3");
 const burgerChartConfig = require("./charts/@burger_chart");
 const tioPepeChartConfig = require("./charts/tio_pepe_chart");
+const esterChartConfig = require("./charts/ester_chart");
+const burgerssonChartConfig = require("./charts/burgersson_chart");
 const pigAndWhistleChartConfig = require("./charts/pig_and_whistle_chart");
+const mrDonerChartConfig = require("./charts/mr_doner_chart");
 
 var hasScrolled = false;
 
@@ -14,4 +17,7 @@ document.addEventListener("scroll", function loadGraphs() {
   c3.generate(burgerChartConfig);
   c3.generate(pigAndWhistleChartConfig);
   c3.generate(tioPepeChartConfig);
+  c3.generate(esterChartConfig);
+  c3.generate(burgerssonChartConfig);
+  c3.generate(mrDonerChartConfig);
 });

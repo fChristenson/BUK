@@ -361,177 +361,172 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 </head>
 
-<body>
-  <label id="menu-button" for="menu-toggle"></label>
-  <h1 class="title">Träffar</h1>
-  <div id="root">
-    <input id="menu-toggle" data-js="menu-toggle" type="checkbox" onclick="loadMenuImages()">
-    <aside class="menu" data-js="menu">
-      <div class="menu__list">
-        <ul class="menu__ul">
-          <li class="menu__li">
-            <a href="/meetups" class="menu__link">
-              <img data-js="load-on-click" alt="logo" class="menu__img" data-src="/logo.svg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAbACwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDhtHsbaWREM91twzbVHfH09M/lXWWfh6TzEZZriOJlP/HyCGPHZcZrJ0LUp4LaO3iZVQMWYxofMP1JOa7DT71zEBK28DOcKQR+tYtmyRBBHZ2m9FmmnYLhgYsnPfP4+9VJ9KQtI9reMxhUllf5SvGAVGORUEnjy2stbk01Y0lSM/vp5z5Byf7ufvEA+3HStHTdci165uJYgUW2Ywlich8AHsenPB+tKwXPP9QtXXJjnDsVyfMLAL64+WuXdG3nBB9yf/rV6N4kaRpWaXBLLnCKSK4C55nYluTzwD/jVxZMkbdjfxI24/Kex2it+01GKNWIPzKOTg/OTzj8q4KJiRye1XolDkE5zuA4OKHEakdWby3uJ9rWbvKrF1YHOD2PPQjoKt214ltMzmGSFCm0gMMewwPqfzribslL5wrMABwNxx0rRtriVbiEq+0qcggYPHSpsNM0tUWWYebKEtVIJ3ySbQef4e56jt2ri7ry0upVimEsYb5XxjcPXFausTSShzI7O27O5jk/n1rAPWriiJM//9k=">
-              <div class="menu__link-text-container">
-                <h2 class="menu__h2">Träffar</h2>
-                <div class="menu__text">Tid &amp; Plats</div>
-              </div>
-            </a>
-          </li>
-          <li class="menu__li">
-            <a href="/burgers" class="menu__link">
-              <img data-js="load-on-click" alt="logo" class="menu__img" data-src="/logo.svg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAbACwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDhtHsbaWREM91twzbVHfH09M/lXWWfh6TzEZZriOJlP/HyCGPHZcZrJ0LUp4LaO3iZVQMWYxofMP1JOa7DT71zEBK28DOcKQR+tYtmyRBBHZ2m9FmmnYLhgYsnPfP4+9VJ9KQtI9reMxhUllf5SvGAVGORUEnjy2stbk01Y0lSM/vp5z5Byf7ufvEA+3HStHTdci165uJYgUW2Ywlich8AHsenPB+tKwXPP9QtXXJjnDsVyfMLAL64+WuXdG3nBB9yf/rV6N4kaRpWaXBLLnCKSK4C55nYluTzwD/jVxZMkbdjfxI24/Kex2it+01GKNWIPzKOTg/OTzj8q4KJiRye1XolDkE5zuA4OKHEakdWby3uJ9rWbvKrF1YHOD2PPQjoKt214ltMzmGSFCm0gMMewwPqfzribslL5wrMABwNxx0rRtriVbiEq+0qcggYPHSpsNM0tUWWYebKEtVIJ3ySbQef4e56jt2ri7ry0upVimEsYb5XxjcPXFausTSShzI7O27O5jk/n1rAPWriiJM//9k=">
-              <div class="menu__link-text-container">
-                <h2 class="menu__h2">Burgare</h2>
-                <div class="menu__text">Recensioner &amp; Bilder</div>
-              </div>
-            </a>
-          </li>
-          <li class="menu__li">
-            <a href="/members" class="menu__link">
-              <img data-js="load-on-click" alt="logo" class="menu__img" data-src="/logo.svg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAbACwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDhtHsbaWREM91twzbVHfH09M/lXWWfh6TzEZZriOJlP/HyCGPHZcZrJ0LUp4LaO3iZVQMWYxofMP1JOa7DT71zEBK28DOcKQR+tYtmyRBBHZ2m9FmmnYLhgYsnPfP4+9VJ9KQtI9reMxhUllf5SvGAVGORUEnjy2stbk01Y0lSM/vp5z5Byf7ufvEA+3HStHTdci165uJYgUW2Ywlich8AHsenPB+tKwXPP9QtXXJjnDsVyfMLAL64+WuXdG3nBB9yf/rV6N4kaRpWaXBLLnCKSK4C55nYluTzwD/jVxZMkbdjfxI24/Kex2it+01GKNWIPzKOTg/OTzj8q4KJiRye1XolDkE5zuA4OKHEakdWby3uJ9rWbvKrF1YHOD2PPQjoKt214ltMzmGSFCm0gMMewwPqfzribslL5wrMABwNxx0rRtriVbiEq+0qcggYPHSpsNM0tUWWYebKEtVIJ3ySbQef4e56jt2ri7ry0upVimEsYb5XxjcPXFausTSShzI7O27O5jk/n1rAPWriiJM//9k=">
-              <div class="menu__link-text-container">
-                <h2 class="menu__h2">Medlemmar</h2>
-                <div class="menu__text">Våra goa gubbar</div>
-              </div>
-            </a>
-          </li>
-          <li class="menu__li">
-            <a href="/rules" class="menu__link">
-              <img data-js="load-on-click" alt="logo" class="menu__img" data-src="/logo.svg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAbACwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDhtHsbaWREM91twzbVHfH09M/lXWWfh6TzEZZriOJlP/HyCGPHZcZrJ0LUp4LaO3iZVQMWYxofMP1JOa7DT71zEBK28DOcKQR+tYtmyRBBHZ2m9FmmnYLhgYsnPfP4+9VJ9KQtI9reMxhUllf5SvGAVGORUEnjy2stbk01Y0lSM/vp5z5Byf7ufvEA+3HStHTdci165uJYgUW2Ywlich8AHsenPB+tKwXPP9QtXXJjnDsVyfMLAL64+WuXdG3nBB9yf/rV6N4kaRpWaXBLLnCKSK4C55nYluTzwD/jVxZMkbdjfxI24/Kex2it+01GKNWIPzKOTg/OTzj8q4KJiRye1XolDkE5zuA4OKHEakdWby3uJ9rWbvKrF1YHOD2PPQjoKt214ltMzmGSFCm0gMMewwPqfzribslL5wrMABwNxx0rRtriVbiEq+0qcggYPHSpsNM0tUWWYebKEtVIJ3ySbQef4e56jt2ri7ry0upVimEsYb5XxjcPXFausTSShzI7O27O5jk/n1rAPWriiJM//9k=">
-              <div class="menu__link-text-container">
-                <h2 class="menu__h2">Regler</h2>
-                <div class="menu__text">Ja, vi har sånt också</div>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <div class="menu__list__click-catcher" data-js="menu-click-catcher"></div>
-      </div>
-      <div class="menu__click-catcher" data-js="menu-click-catcher"></div>
-    </aside>
-    <table class="schedule">
-      <tbody>
-        <tr>
-          <td class="schedule__td">19 Okt 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">@Burger</h2>
-            <div class="schedule__text">Storgatan 25</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">10 Nov 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">The Pig &amp; Whistle</h2>
-            <div class="schedule__text">Gibraltargatan 80</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">7 Dec 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">Tio Pepe</h2>
-            <div class="schedule__text">Södra Torggatan 1</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">
-            <del>5 Jan 18.00</del>
-          </td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">Tugg Burgers</h2>
-            <div class="schedule__text">Drottninggatan 21</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">1 Feb 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">Ester</h2>
-            <div class="schedule__text">Norra Torggatan 4</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">2 Mar 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">Burgersson</h2>
-            <div class="schedule__text">Skanstorget 4</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">29 Mar 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">Mr Döner</h2>
-            <div class="schedule__text">Gottskärsvägen 2</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">27 Apr 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">The Barn</h2>
-            <div class="schedule__text">Kyrkogatan 11</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">24 Maj 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">Grevens Gastro</h2>
-            <div class="schedule__text">Västergatan 23A</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">22 Jun 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">Butchers Market</h2>
-            <div class="schedule__text">Storgatan 47</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">19 Jul 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">Street Friends</h2>
-            <div class="schedule__text">Norra Torggatan 6</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">17 Aug 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">Texas Longhorn</h2>
-            <div class="schedule__text">Södra Vägen 7</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">13 Sep 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">The Square</h2>
-            <div class="schedule__text">Storgatan 35</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">12 Okt 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">2112</h2>
-            <div class="schedule__text">Magasinsgatan 5</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">8 Nov 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">Tullen 8:12</h2>
-            <div class="schedule__text">Norra Torggatan 9D</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="schedule__td">7 Dec 18.00</td>
-          <td class="schedule__td">
-            <h2 class="schedule__h2">Stockyard Burgerjoint</h2>
-            <div class="schedule__text">Storgatan 51</div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  <body>
+    <label id="menu-button" for="menu-toggle"></label>
+    <h1 class="title">Träffar</h1>
+    <div id="root">
+      <input id="menu-toggle" data-js="menu-toggle" type="checkbox" onclick="loadMenuImages()">
+<aside class="menu" data-js="menu">
+  <div class="menu__list">
+    <ul class="menu__ul">
+      <li class="menu__li">
+        <a href="/meetups" class="menu__link">
+          <img data-js="load-on-click" alt="logo" class="menu__img" data-src="/logo.svg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAbACwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDhtHsbaWREM91twzbVHfH09M/lXWWfh6TzEZZriOJlP/HyCGPHZcZrJ0LUp4LaO3iZVQMWYxofMP1JOa7DT71zEBK28DOcKQR+tYtmyRBBHZ2m9FmmnYLhgYsnPfP4+9VJ9KQtI9reMxhUllf5SvGAVGORUEnjy2stbk01Y0lSM/vp5z5Byf7ufvEA+3HStHTdci165uJYgUW2Ywlich8AHsenPB+tKwXPP9QtXXJjnDsVyfMLAL64+WuXdG3nBB9yf/rV6N4kaRpWaXBLLnCKSK4C55nYluTzwD/jVxZMkbdjfxI24/Kex2it+01GKNWIPzKOTg/OTzj8q4KJiRye1XolDkE5zuA4OKHEakdWby3uJ9rWbvKrF1YHOD2PPQjoKt214ltMzmGSFCm0gMMewwPqfzribslL5wrMABwNxx0rRtriVbiEq+0qcggYPHSpsNM0tUWWYebKEtVIJ3ySbQef4e56jt2ri7ry0upVimEsYb5XxjcPXFausTSShzI7O27O5jk/n1rAPWriiJM//9k=">
+          <div class="menu__link-text-container">
+            <h2 class="menu__h2">Träffar</h2>
+            <div class="menu__text">Tid &amp; Plats</div>
+          </div>
+        </a>
+      </li>
+      <li class="menu__li">
+        <a href="/burgers" class="menu__link">
+          <img data-js="load-on-click" alt="logo" class="menu__img" data-src="/logo.svg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAbACwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDhtHsbaWREM91twzbVHfH09M/lXWWfh6TzEZZriOJlP/HyCGPHZcZrJ0LUp4LaO3iZVQMWYxofMP1JOa7DT71zEBK28DOcKQR+tYtmyRBBHZ2m9FmmnYLhgYsnPfP4+9VJ9KQtI9reMxhUllf5SvGAVGORUEnjy2stbk01Y0lSM/vp5z5Byf7ufvEA+3HStHTdci165uJYgUW2Ywlich8AHsenPB+tKwXPP9QtXXJjnDsVyfMLAL64+WuXdG3nBB9yf/rV6N4kaRpWaXBLLnCKSK4C55nYluTzwD/jVxZMkbdjfxI24/Kex2it+01GKNWIPzKOTg/OTzj8q4KJiRye1XolDkE5zuA4OKHEakdWby3uJ9rWbvKrF1YHOD2PPQjoKt214ltMzmGSFCm0gMMewwPqfzribslL5wrMABwNxx0rRtriVbiEq+0qcggYPHSpsNM0tUWWYebKEtVIJ3ySbQef4e56jt2ri7ry0upVimEsYb5XxjcPXFausTSShzI7O27O5jk/n1rAPWriiJM//9k=">
+          <div class="menu__link-text-container">
+            <h2 class="menu__h2">Burgare</h2>
+            <div class="menu__text">Recensioner &amp; Bilder</div>
+          </div>
+        </a>
+      </li>
+      <li class="menu__li">
+        <a href="/members" class="menu__link">
+          <img data-js="load-on-click" alt="logo" class="menu__img" data-src="/logo.svg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAbACwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDhtHsbaWREM91twzbVHfH09M/lXWWfh6TzEZZriOJlP/HyCGPHZcZrJ0LUp4LaO3iZVQMWYxofMP1JOa7DT71zEBK28DOcKQR+tYtmyRBBHZ2m9FmmnYLhgYsnPfP4+9VJ9KQtI9reMxhUllf5SvGAVGORUEnjy2stbk01Y0lSM/vp5z5Byf7ufvEA+3HStHTdci165uJYgUW2Ywlich8AHsenPB+tKwXPP9QtXXJjnDsVyfMLAL64+WuXdG3nBB9yf/rV6N4kaRpWaXBLLnCKSK4C55nYluTzwD/jVxZMkbdjfxI24/Kex2it+01GKNWIPzKOTg/OTzj8q4KJiRye1XolDkE5zuA4OKHEakdWby3uJ9rWbvKrF1YHOD2PPQjoKt214ltMzmGSFCm0gMMewwPqfzribslL5wrMABwNxx0rRtriVbiEq+0qcggYPHSpsNM0tUWWYebKEtVIJ3ySbQef4e56jt2ri7ry0upVimEsYb5XxjcPXFausTSShzI7O27O5jk/n1rAPWriiJM//9k=">
+          <div class="menu__link-text-container">
+            <h2 class="menu__h2">Medlemmar</h2>
+            <div class="menu__text">Våra goa gubbar</div>
+          </div>
+        </a>
+      </li>
+      <li class="menu__li">
+        <a href="/rules" class="menu__link">
+          <img data-js="load-on-click" alt="logo" class="menu__img" data-src="/logo.svg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAbACwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDhtHsbaWREM91twzbVHfH09M/lXWWfh6TzEZZriOJlP/HyCGPHZcZrJ0LUp4LaO3iZVQMWYxofMP1JOa7DT71zEBK28DOcKQR+tYtmyRBBHZ2m9FmmnYLhgYsnPfP4+9VJ9KQtI9reMxhUllf5SvGAVGORUEnjy2stbk01Y0lSM/vp5z5Byf7ufvEA+3HStHTdci165uJYgUW2Ywlich8AHsenPB+tKwXPP9QtXXJjnDsVyfMLAL64+WuXdG3nBB9yf/rV6N4kaRpWaXBLLnCKSK4C55nYluTzwD/jVxZMkbdjfxI24/Kex2it+01GKNWIPzKOTg/OTzj8q4KJiRye1XolDkE5zuA4OKHEakdWby3uJ9rWbvKrF1YHOD2PPQjoKt214ltMzmGSFCm0gMMewwPqfzribslL5wrMABwNxx0rRtriVbiEq+0qcggYPHSpsNM0tUWWYebKEtVIJ3ySbQef4e56jt2ri7ry0upVimEsYb5XxjcPXFausTSShzI7O27O5jk/n1rAPWriiJM//9k=">
+          <div class="menu__link-text-container">
+            <h2 class="menu__h2">Regler</h2>
+            <div class="menu__text">Ja, vi har sånt också</div>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="menu__list__click-catcher" data-js="menu-click-catcher"></div>
   </div>
-  <script type="text/javascript" src="/runtime.js"></script>
-  <script type="text/javascript" src="/vendor.js"></script>
-  <script type="text/javascript" src="/main.js"></script>
-</body>
+  <div class="menu__click-catcher" data-js="menu-click-catcher"></div>
+</aside>
+        <table class="schedule">
+  <tbody>
+    <tr>
+      <td class="schedule__td">19 Okt 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">@Burger</h2>
+        <div class="schedule__text">Storgatan 25</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">10 Nov 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">Burgersson</h2>
+        <div class="schedule__text">Skanstorget 4</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">7 Dec 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">Ester</h2>
+        <div class="schedule__text">Norra Torggatan 4</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">5 Jan 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">Tugg Burgers</h2>
+        <div class="schedule__text">Drottninggatan 21</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">1 Feb 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">Tio Pepe</h2>
+        <div class="schedule__text">Södra Torggatan 1</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">2 Mar 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">The Pig &amp; Whistle</h2>
+        <div class="schedule__text">Gibraltargatan 80</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">29 Mar 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">Mr Döner</h2>
+        <div class="schedule__text">Gottskärsvägen 2</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">27 Apr 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">The Barn</h2>
+        <div class="schedule__text">Kyrkogatan 11</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">24 Maj 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">Grevens Gastro</h2>
+        <div class="schedule__text">Västergatan 23A</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">22 Jun 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">Butchers Market</h2>
+        <div class="schedule__text">Storgatan 47</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">19 Jul 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">Street Friends</h2>
+        <div class="schedule__text">Norra Torggatan 6</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">17 Aug 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">Texas Longhorn</h2>
+        <div class="schedule__text">Södra Vägen 7</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">13 Sep 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">The Square</h2>
+        <div class="schedule__text">Storgatan 35</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">12 Okt 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">2112</h2>
+        <div class="schedule__text">Magasinsgatan 5</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">8 Nov 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">Tullen 8:12</h2>
+        <div class="schedule__text">Norra Torggatan 9D</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="schedule__td">7 Dec 18.00</td>
+      <td class="schedule__td">
+        <h2 class="schedule__h2">Stockyard Burgerjoint</h2>
+        <div class="schedule__text">Storgatan 51</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+  <script type="text/javascript" src="/runtime.js"></script><script type="text/javascript" src="/vendor.js"></script><script type="text/javascript" src="/main.js"></script></body>
 
 </html>
