@@ -1,25 +1,28 @@
-module.exports = (id, columns, title) => {
+module.exports = (id, columns) => {
   return {
     bindto: id,
     data: {
-      type: "donut",
+      type: "bar",
       columns: columns
     },
     tooltip: {
       show: false
     },
     color: {
-      pattern: ["#3F51B5", "#2196F3", "#00BCD4", "#009688", "#4CAF50"]
+      pattern: ["#3F51B5", "#2196F3", "#00BCD4", "#009688"]
     },
-    donut: {
-      title: title,
-      color: {
-        pattern: ["#fff"]
+    axis: {
+      y: {
+        min: 0,
+        max: 6
       },
-      label: {
-        format: function(value) {
-          return Math.floor(value);
-        }
+      x: {
+        show: false
+      }
+    },
+    bar: {
+      width: {
+        ratio: 0.3
       }
     }
   };

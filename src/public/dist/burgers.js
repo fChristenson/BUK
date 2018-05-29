@@ -59,28 +59,31 @@ module.exports = __webpack_require__.p + "2018-01-11-gubbar3.webp";
 /***/ "Ju5E":
 /***/ (function(module, exports) {
 
-module.exports = (id, columns, title) => {
+module.exports = (id, columns) => {
   return {
     bindto: id,
     data: {
-      type: "donut",
+      type: "bar",
       columns: columns
     },
     tooltip: {
       show: false
     },
     color: {
-      pattern: ["#3F51B5", "#2196F3", "#00BCD4", "#009688", "#4CAF50"]
+      pattern: ["#3F51B5", "#2196F3", "#00BCD4", "#009688"]
     },
-    donut: {
-      title: title,
-      color: {
-        pattern: ["#fff"]
+    axis: {
+      y: {
+        min: 0,
+        max: 6
       },
-      label: {
-        format: function(value) {
-          return Math.floor(value);
-        }
+      x: {
+        show: false
+      }
+    },
+    bar: {
+      width: {
+        ratio: 0.3
       }
     }
   };
@@ -95,13 +98,7 @@ module.exports = (id, columns, title) => {
 const ChartConfig = __webpack_require__("Ju5E");
 
 const id = "#mr-doner";
-const columns = [
-  ["Puck", 3],
-  ["Tillbehör", 2],
-  ["Bröd", 3],
-  ["Service", 3],
-  ["Helhet", 3]
-];
+const columns = [["Puck", 3], ["Tillbehör", 2], ["Bröd", 3], ["Service", 3]];
 const title = "3/6";
 
 module.exports = ChartConfig(id, columns, title);
@@ -199,13 +196,7 @@ module.exports = __webpack_require__.p + "2018-01-11-burgare.webp";
 const ChartConfig = __webpack_require__("Ju5E");
 
 const id = "#chart-tio-pepe";
-const columns = [
-  ["Puck", 5],
-  ["Tillbehör", 4],
-  ["Bröd", 4],
-  ["Service", 2],
-  ["Helhet", 4]
-];
+const columns = [["Puck", 5], ["Tillbehör", 4], ["Bröd", 4], ["Service", 2]];
 const title = "4/6";
 
 module.exports = ChartConfig(id, columns, title);
@@ -219,13 +210,7 @@ module.exports = ChartConfig(id, columns, title);
 const ChartConfig = __webpack_require__("Ju5E");
 
 const id = "#chart-pig-and-whistle";
-const columns = [
-  ["Puck", 5],
-  ["Tillbehör", 4],
-  ["Bröd", 4],
-  ["Service", 2],
-  ["Helhet", 4]
-];
+const columns = [["Puck", 5], ["Tillbehör", 4], ["Bröd", 4], ["Service", 2]];
 const title = "4/6";
 
 module.exports = ChartConfig(id, columns, title);
@@ -318,13 +303,7 @@ module.exports = __webpack_require__.p + "2018-03-29-gubbar.webp";
 const ChartConfig = __webpack_require__("Ju5E");
 
 const id = "#chart";
-const columns = [
-  ["Puck", 4],
-  ["Tillbehör", 4],
-  ["Bröd", 4],
-  ["Service", 4],
-  ["Helhet", 4]
-];
+const columns = [["Puck", 4], ["Tillbehör", 4], ["Bröd", 4], ["Service", 4]];
 const title = "4/6";
 
 module.exports = ChartConfig(id, columns, title);
@@ -346,13 +325,7 @@ module.exports = __webpack_require__("khSn");
 const ChartConfig = __webpack_require__("Ju5E");
 
 const id = "#ester";
-const columns = [
-  ["Puck", 6],
-  ["Tillbehör", 4],
-  ["Bröd", 4],
-  ["Service", 3],
-  ["Helhet", 5]
-];
+const columns = [["Puck", 6], ["Tillbehör", 4], ["Bröd", 4], ["Service", 3]];
 const title = "5/6";
 
 module.exports = ChartConfig(id, columns, title);
@@ -373,13 +346,7 @@ module.exports = __webpack_require__.p + "2018-03-29-burgare.webp";
 const ChartConfig = __webpack_require__("Ju5E");
 
 const id = "#burgersson";
-const columns = [
-  ["Puck", 5],
-  ["Tillbehör", 4],
-  ["Bröd", 3],
-  ["Service", 4],
-  ["Helhet", 4]
-];
+const columns = [["Puck", 5], ["Tillbehör", 4], ["Bröd", 3], ["Service", 4]];
 const title = "4/6";
 
 module.exports = ChartConfig(id, columns, title);
