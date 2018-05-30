@@ -1,4 +1,4 @@
-module.exports = (id, columns) => {
+module.exports = (id, columns, title) => {
   return {
     bindto: id,
     data: {
@@ -11,6 +11,7 @@ module.exports = (id, columns) => {
     color: {
       pattern: ["#3F51B5", "#2196F3", "#00BCD4", "#009688"]
     },
+    title: title,
     axis: {
       y: {
         min: 0,
@@ -21,8 +22,9 @@ module.exports = (id, columns) => {
       }
     },
     bar: {
+      space: 0.25,
       width: {
-        ratio: 0.3
+        ratio: 0.2
       }
     }
   };

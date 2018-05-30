@@ -59,7 +59,7 @@ module.exports = __webpack_require__.p + "2018-01-11-gubbar3.webp";
 /***/ "Ju5E":
 /***/ (function(module, exports) {
 
-module.exports = (id, columns) => {
+module.exports = (id, columns, title) => {
   return {
     bindto: id,
     data: {
@@ -72,6 +72,7 @@ module.exports = (id, columns) => {
     color: {
       pattern: ["#3F51B5", "#2196F3", "#00BCD4", "#009688"]
     },
+    title: title,
     axis: {
       y: {
         min: 0,
@@ -82,8 +83,9 @@ module.exports = (id, columns) => {
       }
     },
     bar: {
+      space: 0.25,
       width: {
-        ratio: 0.3
+        ratio: 0.2
       }
     }
   };
@@ -176,6 +178,27 @@ __webpack_require__("acIW");
 
 /***/ }),
 
+/***/ "WwHc":
+/***/ (function(module, exports, __webpack_require__) {
+
+const ChartConfig = __webpack_require__("Ju5E");
+
+const id = "#total";
+const columns = [
+  ["@Burger", 4],
+  ["The pig & whistle", 4],
+  ["Tio pepe", 4],
+  ["Ester", 5],
+  ["Burgersson", 4],
+  ["Mr Döner", 3]
+];
+const title = "Resturanger";
+
+module.exports = ChartConfig(id, columns, title);
+
+
+/***/ }),
+
 /***/ "YIl9":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -250,6 +273,7 @@ module.exports = __webpack_require__.p + "2018-03-02-gubbar2.webp";
 /***/ (function(module, exports, __webpack_require__) {
 
 const c3 = __webpack_require__("g1pc");
+const resturantConfig = __webpack_require__("WwHc");
 const burgerChartConfig = __webpack_require__("ooXM");
 const tioPepeChartConfig = __webpack_require__("ZoRh");
 const esterChartConfig = __webpack_require__("yjIw");
@@ -258,6 +282,7 @@ const pigAndWhistleChartConfig = __webpack_require__("ZtB3");
 const mrDonerChartConfig = __webpack_require__("Met9");
 
 var hasScrolled = false;
+c3.generate(resturantConfig);
 
 document.addEventListener("scroll", function loadGraphs() {
   if (hasScrolled) {
