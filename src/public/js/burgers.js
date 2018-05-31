@@ -26,3 +26,7 @@ require("../images/2018-03-29-gubbar2.jpg");
 require("../images/2018-03-29-gubbar3.jpg");
 require("../images/2018-03-29-gubbar4.jpg");
 require("../images/2018-03-29-gubbar5.jpg");
+
+require("../images/2018-05-31-burgare.jpg");
+require("../images/2018-05-31-gubbar.jpg");
+require("../images/2018-05-31-gubbar2.jpg");

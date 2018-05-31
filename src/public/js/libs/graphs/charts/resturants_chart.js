@@ -7,7 +7,8 @@ const columns = [
   ["Tio pepe", 4],
   ["Ester", 5],
   ["Burgersson", 4],
-  ["Mr Döner", 3]
+  ["Mr Döner", 3],
+  ["Butchers market", 5]
 ];
 const title = "Resturanger";
 

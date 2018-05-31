@@ -35,6 +35,13 @@ module.exports = __webpack_require__.p + "2018-01-11-burgare2.webp";
 
 /***/ }),
 
+/***/ "D4Xo":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "2018-05-31-gubbar2.webp";
+
+/***/ }),
+
 /***/ "Daj4":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -175,6 +182,24 @@ __webpack_require__("ADZB");
 __webpack_require__("+zg4");
 __webpack_require__("acIW");
 
+__webpack_require__("gUcN");
+__webpack_require__("miiL");
+__webpack_require__("D4Xo");
+
+
+/***/ }),
+
+/***/ "W4VS":
+/***/ (function(module, exports, __webpack_require__) {
+
+const ChartConfig = __webpack_require__("Ju5E");
+
+const id = "#butchers-market";
+const columns = [["Puck", 5], ["Tillbehör", 4], ["Bröd", 4], ["Service", 4]];
+const title = "5/6";
+
+module.exports = ChartConfig(id, columns, title);
+
 
 /***/ }),
 
@@ -190,7 +215,8 @@ const columns = [
   ["Tio pepe", 4],
   ["Ester", 5],
   ["Burgersson", 4],
-  ["Mr Döner", 3]
+  ["Mr Döner", 3],
+  ["Butchers market", 5]
 ];
 const title = "Resturanger";
 
@@ -262,6 +288,13 @@ module.exports = __webpack_require__.p + "2018-01-11-gubbar2.webp";
 
 /***/ }),
 
+/***/ "gUcN":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "2018-05-31-burgare.webp";
+
+/***/ }),
+
 /***/ "gs+M":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -280,6 +313,7 @@ const esterChartConfig = __webpack_require__("yjIw");
 const burgerssonChartConfig = __webpack_require__("zhkT");
 const pigAndWhistleChartConfig = __webpack_require__("ZtB3");
 const mrDonerChartConfig = __webpack_require__("Met9");
+const butchersMarketChartConfig = __webpack_require__("W4VS");
 
 var hasScrolled = false;
 c3.generate(resturantConfig);
@@ -296,6 +330,7 @@ document.addEventListener("scroll", function loadGraphs() {
   c3.generate(esterChartConfig);
   c3.generate(burgerssonChartConfig);
   c3.generate(mrDonerChartConfig);
+  c3.generate(butchersMarketChartConfig);
 });
 
 
@@ -312,6 +347,13 @@ module.exports = __webpack_require__.p + "2018-01-11-burgare3.webp";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "2018-03-29-gubbar2.webp";
+
+/***/ }),
+
+/***/ "miiL":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "2018-05-31-gubbar.webp";
 
 /***/ }),
 
