@@ -284,12 +284,14 @@ ul {
 
 .burgers__name {
   padding-left: 16px;
-  padding-top: 32px;
+  padding-top: 86px;
+  text-align: center;
   font-size: 18px;
 }
 
 .burgers__resturant-street {
   font-size: 14px;
+  text-align: center;
   padding-left: 16px;
 }
 
